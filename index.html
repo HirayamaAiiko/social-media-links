@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirayama Aiiko | Social Links</title>
+    
+    <!-- Configuración de Favicon e Iconos Móviles -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💜</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23E9D5FF%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2270%22>💜</text></svg>">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome para Iconos (v6.6.0) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Soporte para Japonés y Coreano -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'script': ['"Great Vibes"', 'cursive'],
+                        'body': ['"Quicksand"', '"Noto Sans JP"', '"Noto Sans KR"', 'sans-serif'],
+                    },
+                    colors: {
+                        'purple-primary': '#8B5CF6',
+                        'purple-soft': '#DDD6FE',
+                        'purple-deep': '#5B21B6',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'blob': 'blob 7s infinite',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Estilos personalizados para el Glassmorphism */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.20);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        
+        .glass-btn {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(8px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-btn:hover {
+            background: rgba(255, 255, 255, 0.90);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(139, 92, 246, 0.25); /* Sombra púrpura */
+        }
+        
+        /* Fondo animado Púrpura */
+        body {
+            background-color: #E9D5FF;
+            background-image: linear-gradient(135deg, #E9D5FF 0%, #C4B5FD 50%, #A78BFA 100%);
+            overflow-x: hidden; 
+        }
+
+        /* Ocultar scrollbar pero permitir scroll */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+        }
+
+        /* Clase activa para botones de idioma */
+        .lang-active {
+            background-color: rgba(255, 255, 255, 0.95);
+            color: #7C3AED; /* Violeta intenso */
+            box-shadow: 0 2px 8px rgba(124, 58, 237, 0.15);
+        }
+    </style>
+</head>
+<body class="font-body min-h-screen text-slate-700 relative selection:bg-purple-200 selection:text-purple-900">
+
+    <!-- Formas flotantes de fondo (Decoración Púrpura) -->
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+        <div class="absolute top-0 -left-4 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob"></div>
+        <div class="absolute top-0 -right-4 w-72 h-72 bg-indigo-300 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-2000"></div>
+        <div class="absolute -bottom-8 left-20 w-72 h-72 bg-fuchsia-300 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-4000"></div>
+    </div>
+
+    <!-- Selector de Idioma Flotante - Ajustado para móviles -->
+    <div class="absolute top-3 right-3 z-30 animate-fade-in-up">
+        <div class="glass-panel rounded-full p-1 flex gap-1 shadow-sm overflow-x-auto max-w-[90vw]">
+            <button onclick="setLanguage('en')" id="btn-en" class="lang-btn px-2.5 py-1 rounded-full text-[10px] sm:text-xs font-bold hover:bg-white/60 transition-all text-purple-900 lang-active whitespace-nowrap">EN</button>
+            <button onclick="setLanguage('es')" id="btn-es" class="lang-btn px-2.5 py-1 rounded-full text-[10px] sm:text-xs font-bold hover:bg-white/60 transition-all text-purple-900 whitespace-nowrap">ES</button>
+            <button onclick="setLanguage('jp')" id="btn-jp" class="lang-btn px-2.5 py-1 rounded-full text-[10px] sm:text-xs font-bold hover:bg-white/60 transition-all text-purple-900 whitespace-nowrap">JP</button>
+            <button onclick="setLanguage('kr')" id="btn-kr" class="lang-btn px-2.5 py-1 rounded-full text-[10px] sm:text-xs font-bold hover:bg-white/60 transition-all text-purple-900 whitespace-nowrap">KR</button>
+        </div>
+    </div>
+
+    <!-- Contenedor Principal -->
+    <main class="flex flex-col items-center justify-center min-h-screen p-4 py-12">
+        
+        <div class="w-full max-w-md mx-auto">
+            
+            <!-- Sección de Perfil -->
+            <div class="flex flex-col items-center mb-10 text-center animate-fade-in-up" style="animation-delay: 0.1s;">
+                <!-- Imagen de Perfil -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                    <div class="relative w-32 h-32 rounded-full border-4 border-white/80 shadow-xl overflow-hidden bg-purple-100">
+                        <!-- Imagen local alojada en Github -->
+                        <img src="./images/profile.png" 
+                             onerror="this.src='https://ui-avatars.com/api/?name=Hirayama+Aiiko&background=8B5CF6&color=fff&size=200'" 
+                             alt="Avatar Hirayama Aiiko" 
+                             class="w-full h-full object-cover transform transition duration-500 group-hover:scale-110">
+                    </div>
+                    <!-- Icono verificado -->
+                    <div class="absolute bottom-1 right-1 bg-white rounded-full p-1 text-purple-600 shadow-sm" title="Verified">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Nombre y Bio -->
+                <h1 class="font-script text-5xl text-purple-900 mt-6 mb-2 drop-shadow-sm filter">Hirayama Aiiko</h1>
+                <p id="profile-role" class="text-white font-medium text-lg bg-purple-500/40 px-4 py-1 rounded-full backdrop-blur-md border border-white/30 shadow-sm">
+                    ✨ LoRa & ILXL Model Trainer ✨
+                </p>
+                <p id="profile-bio" class="mt-4 text-slate-700 max-w-xs leading-relaxed font-medium">
+                    Creating art with Artificial Intelligence. Trainer of style models, characters... checkpoints and more... 🎨🤖
+                </p>
+                
+                <!-- Iconos Sociales Pequeños -->
+                <div class="flex gap-5 mt-5 text-purple-700">
+                    <a href="#" class="hover:text-purple-900 hover:scale-110 transition-transform"><i class="fa-solid fa-share-nodes text-2xl"></i></a>
+                    <a href="#" class="hover:text-purple-900 hover:scale-110 transition-transform"><i class="fa-solid fa-wand-magic-sparkles text-2xl"></i></a>
+                </div>
+            </div>
+
+            <!-- Lista de Enlaces -->
+            <div class="space-y-4 w-full px-2">
+                
+                <!-- Botón 1: Metadata Reader (NUEVO) -->
+                <a href="https://hirayamaaiiko.github.io/web.models/#metadata" target="_blank" class="glass-btn animate-fade-in-up block w-full rounded-2xl p-4 text-center relative group border border-purple-300" style="animation-delay: 0.15s;">
+                    <div class="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 bg-white text-purple-600 rounded-full flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-file-code text-lg"></i>
+                    </div>
+                    <span id="txt-meta-title" class="font-bold text-slate-800 text-lg group-hover:text-purple-600 transition-colors">Image Metadata Reader</span>
+                    <span id="txt-meta-desc" class="block text-xs text-slate-500 -mt-0.5 font-medium">View generation info 🔍</span>
+                    <div class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity text-purple-500">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <!-- Botón 2: Discord -->
+                <a href="https://discord.gg/G3eKWBwmtb" target="_blank" class="glass-btn animate-fade-in-up block w-full rounded-2xl p-4 text-center relative group" style="animation-delay: 0.2s;">
+                    <div class="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 bg-[#5865F2] rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-discord text-xl"></i>
+                    </div>
+                    <span id="txt-discord-title" class="font-bold text-slate-800 text-lg group-hover:text-purple-600 transition-colors">Discord Server</span>
+                    <span id="txt-discord-desc" class="block text-xs text-slate-500 -mt-0.5 font-medium">Join the art community 💬</span>
+                    <div class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity text-purple-500">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <!-- Botón 3: TensorArt -->
+                <a href="https://tensor.art/u/622954954671366110" target="_blank" class="glass-btn animate-fade-in-up block w-full rounded-2xl p-4 text-center relative group" style="animation-delay: 0.3s;">
+                    <div class="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-cube text-lg"></i>
+                    </div>
+                    <span id="txt-tensor-title" class="font-bold text-slate-800 text-lg group-hover:text-purple-600 transition-colors">TensorArt</span>
+                    <span id="txt-tensor-desc" class="block text-xs text-slate-500 -mt-0.5 font-medium">My Models and Checkpoints 🧠</span>
+                    <div class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity text-purple-500">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <!-- Botón 4: Página Web -->
+                <a href="#" target="_blank" class="glass-btn animate-fade-in-up block w-full rounded-2xl p-4 text-center relative group" style="animation-delay: 0.4s;">
+                    <div class="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 bg-purple-500 rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-globe text-xl"></i>
+                    </div>
+                    <span id="txt-web-title" class="font-bold text-slate-800 text-lg group-hover:text-purple-600 transition-colors">Website</span>
+                    <span id="txt-web-desc" class="block text-xs text-slate-500 -mt-0.5 font-medium">Portfolio & Personal Blog 🌐</span>
+                    <div class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity text-purple-500">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <!-- Botón 5: Pixiv -->
+                <a href="https://www.pixiv.net/en/users/97168030" target="_blank" class="glass-btn animate-fade-in-up block w-full rounded-2xl p-4 text-center relative group" style="animation-delay: 0.5s;">
+                    <div class="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 bg-[#0096FA] rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-image text-lg"></i>
+                    </div>
+                    <span id="txt-pixiv-title" class="font-bold text-slate-800 text-lg group-hover:text-purple-600 transition-colors">Pixiv</span>
+                    <span id="txt-pixiv-desc" class="block text-xs text-slate-500 -mt-0.5 font-medium">High-resolution gallery 🖼️</span>
+                    <div class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity text-purple-500">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <!-- Botón 6: Ko-fi -->
+                <a href="https://ko-fi.com/aiikohirayama" target="_blank" class="glass-btn animate-fade-in-up block w-full rounded-2xl p-4 text-center relative group" style="animation-delay: 0.55s;">
+                    <div class="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 bg-[#F57D7D] rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-mug-hot text-lg"></i>
+                    </div>
+                    <span id="txt-kofi-title" class="font-bold text-slate-800 text-lg group-hover:text-purple-600 transition-colors">Ko-fi</span>
+                    <span id="txt-kofi-desc" class="block text-xs text-slate-500 -mt-0.5 font-medium">Support me & Buy me a coffee ☕</span>
+                    <div class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity text-purple-500">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                 <!-- Botón 7: X (Twitter) -->
+                 <a href="https://x.com" target="_blank" class="glass-btn animate-fade-in-up block w-full rounded-2xl p-4 text-center relative group" style="animation-delay: 0.6s;">
+                    <div class="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 bg-black rounded-full flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-x-twitter text-xl"></i>
+                    </div>
+                    <span id="txt-x-title" class="font-bold text-slate-800 text-lg group-hover:text-purple-600 transition-colors">X / Twitter</span>
+                    <span id="txt-x-desc" class="block text-xs text-slate-500 -mt-0.5 font-medium">News and Updates 📢</span>
+                    <div class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity text-purple-500">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="mt-12 mb-6 text-center animate-fade-in-up" style="animation-delay: 0.8s;">
+                <div class="flex justify-center gap-2 mb-4">
+                    <span class="w-2 h-2 rounded-full bg-white opacity-40"></span>
+                    <span class="w-2 h-2 rounded-full bg-white opacity-90"></span>
+                    <span class="w-2 h-2 rounded-full bg-white opacity-40"></span>
+                </div>
+                <p id="txt-footer" class="text-purple-900 text-sm font-medium opacity-80">
+                    Made with <i class="fa-solid fa-heart text-purple-500 animate-pulse"></i> by Aiiko
+                </p>
+                <p class="text-xs text-purple-800 opacity-50 mt-1">© 2025 Hirayama Aiiko</p>
+            </footer>
+
+        </div>
+    </main>
+    
+    <!-- Lógica de Multi-lenguaje -->
+    <script>
+        const translations = {
+            en: {
+                role: "✨ LoRa & ILXL Model Trainer ✨",
+                bio: "Creating art with Artificial Intelligence. Trainer of style models, characters... checkpoints and more... 🎨🤖",
+                metaTitle: "Image Metadata Reader",
+                metaDesc: "View generation info 🔍",
+                discordTitle: "Discord Server",
+                discordDesc: "Join the art community 💬",
+                tensorTitle: "TensorArt",
+                tensorDesc: "My Models and Checkpoints 🧠",
+                webTitle: "Website",
+                webDesc: "Portfolio & Personal Blog 🌐",
+                pixivTitle: "Pixiv",
+                pixivDesc: "High-resolution gallery 🖼️",
+                kofiTitle: "Ko-fi",
+                kofiDesc: "Support me & Buy me a coffee ☕",
+                xTitle: "X / Twitter",
+                xDesc: "News and Updates 📢",
+                footer: 'Made with <i class="fa-solid fa-heart text-purple-500 animate-pulse"></i> by Aiiko'
+            },
+            es: {
+                role: "✨ Entrenadora de Modelos LoRa & ILXL ✨",
+                bio: "Creando arte con inteligencia artificial. Entrenadora de modelos de estilo, personaje...checkpoints and more... 🎨🤖",
+                metaTitle: "Lector de Metadatos",
+                metaDesc: "Ver parámetros de generación 🔍",
+                discordTitle: "Servidor de Discord",
+                discordDesc: "Únete a la comunidad de arte 💬",
+                tensorTitle: "TensorArt",
+                tensorDesc: "Mis Modelos y Checkpoints 🧠",
+                webTitle: "Página Web",
+                webDesc: "Portfolio y Blog Personal 🌐",
+                pixivTitle: "Pixiv",
+                pixivDesc: "Galería de alta resolución 🖼️",
+                kofiTitle: "Ko-fi",
+                kofiDesc: "Apóyame e invítame un café ☕",
+                xTitle: "X / Twitter",
+                xDesc: "Noticias y Actualizaciones 📢",
+                footer: 'Hecho con <i class="fa-solid fa-heart text-purple-500 animate-pulse"></i> por Aiiko'
+            },
+            jp: {
+                role: "✨ LoRa & ILXL モデルトレーナー ✨",
+                bio: "AIでアートを制作中。スタイルモデル、キャラクター、チェックポイントなどのトレーナー... 🎨🤖",
+                metaTitle: "画像メタデータリーダー",
+                metaDesc: "生成パラメータを見る 🔍",
+                discordTitle: "Discord サーバー",
+                discordDesc: "コミュニティに参加しよう 💬",
+                tensorTitle: "TensorArt",
+                tensorDesc: "モデルとチェックポイント 🧠",
+                webTitle: "ウェブサイト",
+                webDesc: "ポートフォリオ & ブログ 🌐",
+                pixivTitle: "Pixiv",
+                pixivDesc: "高画質ギャラリー 🖼️",
+                kofiTitle: "Ko-fi",
+                kofiDesc: "サポート＆コーヒーを奢る ☕",
+                xTitle: "X / Twitter",
+                xDesc: "ニュースと最新情報 📢",
+                footer: 'Aiikoが <i class="fa-solid fa-heart text-purple-500 animate-pulse"></i> を込めて作成'
+            },
+            kr: {
+                role: "✨ LoRa & ILXL 모델 트레이너 ✨",
+                bio: "인공지능으로 예술을 창조합니다. 스타일 모델, 캐릭터, 체크포인트 등의 트레이너... 🎨🤖",
+                metaTitle: "이미지 메타데이터 리더",
+                metaDesc: "생성 매개변수 보기 🔍",
+                discordTitle: "디스코드 서버",
+                discordDesc: "예술 커뮤니티에 참여하세요 💬",
+                tensorTitle: "TensorArt",
+                tensorDesc: "내 모델과 체크포인트 🧠",
+                webTitle: "웹사이트",
+                webDesc: "포트폴리오 & 개인 블로그 🌐",
+                pixivTitle: "Pixiv",
+                pixivDesc: "고해상도 갤러리 🖼️",
+                kofiTitle: "Ko-fi",
+                kofiDesc: "후원하기 & 커피 한 잔 ☕",
+                xTitle: "X / Twitter",
+                xDesc: "뉴스 및 업데이트 📢",
+                footer: 'Aiiko가 <i class="fa-solid fa-heart text-purple-500 animate-pulse"></i> 로 만듦'
+            }
+        };
+
+        function setLanguage(lang) {
+            // Actualizar botones activos
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('lang-active'));
+            const btn = document.getElementById(`btn-${lang}`);
+            if(btn) btn.classList.add('lang-active');
+
+            // Obtener textos del idioma seleccionado
+            const t = translations[lang];
+            if (!t) return;
+
+            // Aplicar traducciones con una pequeña animación de opacidad
+            const elements = [
+                { id: 'profile-role', text: t.role },
+                { id: 'profile-bio', text: t.bio },
+                { id: 'txt-meta-title', text: t.metaTitle },
+                { id: 'txt-meta-desc', text: t.metaDesc },
+                { id: 'txt-discord-title', text: t.discordTitle },
+                { id: 'txt-discord-desc', text: t.discordDesc },
+                { id: 'txt-tensor-title', text: t.tensorTitle },
+                { id: 'txt-tensor-desc', text: t.tensorDesc },
+                { id: 'txt-web-title', text: t.webTitle },
+                { id: 'txt-web-desc', text: t.webDesc },
+                { id: 'txt-pixiv-title', text: t.pixivTitle },
+                { id: 'txt-pixiv-desc', text: t.pixivDesc },
+                { id: 'txt-kofi-title', text: t.kofiTitle },
+                { id: 'txt-kofi-desc', text: t.kofiDesc },
+                { id: 'txt-x-title', text: t.xTitle },
+                { id: 'txt-x-desc', text: t.xDesc },
+            ];
+
+            elements.forEach(el => {
+                const domEl = document.getElementById(el.id);
+                if (domEl) {
+                    domEl.style.opacity = '0';
+                    setTimeout(() => {
+                        domEl.innerText = el.text;
+                        domEl.style.opacity = '1';
+                    }, 200);
+                }
+            });
+
+            // Footer (HTML)
+            const footerEl = document.getElementById('txt-footer');
+            if(footerEl) {
+                 footerEl.style.opacity = '0';
+                 setTimeout(() => {
+                    footerEl.innerHTML = t.footer;
+                    footerEl.style.opacity = '1';
+                 }, 200);
+            }
+        }
+        
+        // Transiciones CSS y Detección de Idioma Automática
+        document.addEventListener("DOMContentLoaded", () => {
+             // 1. Configurar transiciones
+             const ids = ['profile-role', 'profile-bio', 'txt-meta-title', 'txt-meta-desc', 
+                          'txt-discord-title', 'txt-discord-desc', 
+                          'txt-tensor-title', 'txt-tensor-desc', 'txt-web-title', 'txt-web-desc', 
+                          'txt-pixiv-title', 'txt-pixiv-desc', 'txt-kofi-title', 'txt-kofi-desc', 
+                          'txt-x-title', 'txt-x-desc', 'txt-footer'];
+             ids.forEach(id => {
+                 const el = document.getElementById(id);
+                 if(el) el.style.transition = "opacity 0.2s ease-in-out";
+             });
+
+             // 2. Detección automática de idioma del navegador
+             const userLang = navigator.language || navigator.userLanguage; 
+             const langCode = userLang.split('-')[0]; // obtener 'es', 'en', 'ja', 'ko'
+
+             let targetLang = 'en'; // Por defecto inglés
+
+             if (langCode === 'es') targetLang = 'es';
+             else if (langCode === 'ja') targetLang = 'jp'; // Mapeo estándar 'ja' a nuestro 'jp'
+             else if (langCode === 'ko') targetLang = 'kr'; // Mapeo estándar 'ko' a nuestro 'kr'
+             
+             // Si el idioma detectado no es inglés (que ya viene cargado por defecto), aplicar cambios
+             if (targetLang !== 'en') {
+                setLanguage(targetLang);
+             }
+        });
+
+        console.log("Sistema de idiomas cargado con autodetección 🌎💜");
+    </script>
+</body>
+</html>
